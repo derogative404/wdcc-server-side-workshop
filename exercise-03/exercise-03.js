@@ -13,12 +13,31 @@ app.get("/gimmeJSON", function (req, res) {
 
     // The JSON object to return
     const person = {
-        name: "Walter White",
-        address: "308 Negra Arroyo Lane"
+        name: "Sebastian Thomas",
+        address: "102 Old Street",
+        city: "London",
+        country: "United Kingdom"
     };
 
     // Send the JSON back to the client
     res.json(person);
+});
+
+app.get("/randomNumber", function (req, res) {
+
+    // The JSON object to return
+
+    let min = 0;
+    let max = 100;
+    let randomNumber =
+        Math.floor(Math.random() * (+max + 1 - +min)) + +min;
+
+    const randomNumberjson= {
+        number: randomNumber
+    };
+
+    // Send the JSON back to the client
+    res.json(randomNumberjson);
 });
 
 // Start the webapp running
