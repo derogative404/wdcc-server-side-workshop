@@ -109,7 +109,9 @@ Once you've checked that everything works as expected, perform the following tas
 4. Add a new HTML file called `index.html` to the `public` folder (its contents can be anything you like). Now, browse to [http://localhost:3000/](http://localhost:3000/). What is displayed, and why? Comment your answer here:
 
 ```
-Your answer here.
+Hello Sebastian! 
+Since this is working on the root path. 
+I am awesome is on the route with the about page.
 ```
 
 ## Exercise Three &ndash; Serving up JSON
